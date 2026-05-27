@@ -119,7 +119,7 @@ const CONFIG = {
       items: [
         {
           q: '¿Puedo seguir usando mi club actual hasta su cierre?',
-          a: 'Sí. Tu club operará normalmente hasta la fecha de cierre confirmada (entre 31 de mayo y 30 de septiembre de 2026 según el club). Mientras tanto, también puedes usar tu membresía en cualquier otra sede de la red Energy Club mediante el Pase ALL-CLUB que tienes asociado.',
+          a: 'Sí. Tu club operará normalmente hasta la fecha de cierre confirmada (entre 31 de mayo y 30 de septiembre de 2026 según el club). Adicionalmente, Energy Club ha activado el Pase ALL-CLUB para los socios de los clubes en convergencia, como medida de continuidad para que puedan entrenar en cualquier otra sede de la red durante este período.',
         },
         {
           q: 'Tengo plan anual o semestral. ¿Pierdo lo que pagué?',
@@ -131,7 +131,7 @@ const CONFIG = {
         },
         {
           q: '¿Puedo entrenar en otros clubes mientras decido?',
-          a: 'Sí. Desde hoy, los socios de los clubes en convergencia tienen activado el Pase ALL-CLUB, que permite entrenar en toda la red Energy Club de Chile mientras evalúan su opción definitiva. No requiere trámite adicional. De todos modos, te recomendamos formalizar tu decisión con alguna de las 4 alternativas para que tu situación quede resuelta antes del cierre de tu club.',
+          a: 'Sí. Como medida de continuidad dispuesta por Energy Club, se ha activado de oficio el Pase ALL-CLUB para todos los socios de los clubes en convergencia, permitiéndoles entrenar en cualquier club de la red Energy Club de Chile durante este período. Esta activación es automática, sin costo adicional y no requiere ningún trámite por parte del socio. No obstante, te recomendamos formalizar tu decisión definitiva mediante una de las 4 alternativas, para que tu situación quede resuelta antes de la fecha de cierre de tu club.',
         },
         {
           q: '¿Puedo traspasarle mi plan a otra persona?',
