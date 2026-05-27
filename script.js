@@ -130,6 +130,10 @@ const CONFIG = {
           a: '3 meses si llevas menos de 3 años con Energy Club, 4 meses si llevas entre 3 y 5 años, 6 meses si llevas más de 5 años.',
         },
         {
+          q: '¿Puedo entrenar en otros clubes mientras decido?',
+          a: 'Sí. Desde hoy, los socios de los clubes en convergencia tienen activado el Pase ALL-CLUB, que permite entrenar en toda la red Energy Club de Chile mientras evalúan su opción definitiva. No requiere trámite adicional. De todos modos, te recomendamos formalizar tu decisión con alguna de las 4 alternativas para que tu situación quede resuelta antes del cierre de tu club.',
+        },
+        {
           q: '¿Puedo traspasarle mi plan a otra persona?',
           a: 'Sí, sin cargo. El plan puede traspasarse a una sola persona. El traspaso a familiar directo tiene un trámite simplificado; para terceros, se requieren los datos del cesionario. El cesionario debe cumplir 4 requisitos: ser mayor de 16 años, no tener un plan Energy Club activo, no tener deuda vigente con Energy Club, y no haber tenido beca activa en los últimos 6 meses.',
         },

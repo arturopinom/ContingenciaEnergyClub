@@ -513,20 +513,14 @@ input, select, textarea { font-family: inherit; }
 }
 .sede-card--special { border-color: #fdba74; background: linear-gradient(180deg, #fffbf5 0%, var(--clr-white) 100%); }
 
-/* Badge fecha de cierre — flujo natural, alineado a la derecha */
+/* Fecha de cierre — inline en el meta, discreta */
 .sede-card__date {
-  align-self: flex-end;
-  background: #fef3f2;
+  font-size: 0.75rem;
   color: var(--clr-primary);
-  border: 1px solid #fecaca;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  white-space: nowrap;
-  margin-bottom: -8px;
+  margin: 6px 0 0;
+  line-height: 1.4;
 }
+.sede-card__date strong { font-weight: 700; }
 
 /* Banner "Desde hoy ya tienes ALL-CLUB" — beneficio inmediato */
 .immediate-benefit {
@@ -611,6 +605,15 @@ input, select, textarea { font-family: inherit; }
 .options-section { padding: 80px 0; }
 .options-section__header { text-align: center; margin-bottom: 48px; }
 .options-section__header .section-subtitle { margin: 12px auto 0; }
+.options-section__note {
+  margin: 32px auto 0;
+  max-width: 720px;
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--clr-gray-500);
+  font-style: italic;
+}
 .options-grid { display: grid; gap: 20px; }
 
 /* Cards */
