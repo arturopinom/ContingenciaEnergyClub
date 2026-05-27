@@ -513,6 +513,66 @@ input, select, textarea { font-family: inherit; }
 }
 .sede-card--special { border-color: #fdba74; background: linear-gradient(180deg, #fffbf5 0%, var(--clr-white) 100%); }
 
+/* Badge fecha de cierre — flujo natural, alineado a la derecha */
+.sede-card__date {
+  align-self: flex-end;
+  background: #fef3f2;
+  color: var(--clr-primary);
+  border: 1px solid #fecaca;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  margin-bottom: -8px;
+}
+
+/* Banner "Desde hoy ya tienes ALL-CLUB" — beneficio inmediato */
+.immediate-benefit {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%);
+  border: 1px solid #6ee7b7;
+  border-left: 4px solid var(--clr-success);
+  border-radius: var(--radius-card);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+.immediate-benefit__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--clr-success);
+  color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.immediate-benefit__icon svg { width: 22px; height: 22px; }
+.immediate-benefit__title {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #064e3b;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.immediate-benefit__text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #166534;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .immediate-benefit { flex-direction: column; padding: 18px 20px; }
+  .immediate-benefit__title { font-size: 1rem; }
+  .immediate-benefit__text { font-size: 0.875rem; }
+}
+
 /* Club grid — columna derecha (Sedes que se fortalecen) */
 .club-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .club-grid-item {
@@ -923,7 +983,7 @@ input, select, textarea { font-family: inherit; }
   .news-section__text { font-size: 0.875rem; }
 }
 
-/* Scope notice — Aclara que el sitio aplica solo a 6 sedes */
+/* Scope notice — Aclara que el sitio aplica solo a 5 sedes */
 .scope-notice {
   background: #fef3f2;
   border-bottom: 2px solid var(--clr-primary);

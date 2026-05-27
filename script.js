@@ -17,12 +17,11 @@ const CONFIG = {
 
   /* Sedes que convergen — dropdown "Mi club actual" */
   closingClubs: [
-    { id: 'alameda',  name: 'Energy Alameda',        address: "Av. O'Higgins 3470, Mall Estación Central",       suggested: 'morande'   },
-    { id: 'norte',    name: 'Energy Plaza Norte',    address: 'Av. Américo Vespucio 1737, Huechuraba',          suggested: 'vitacura'  },
-    { id: 'oeste',    name: 'Energy Plaza Oeste',    address: 'Av. Américo Vespucio 1501, Cerrillos',           suggested: 'midmall'   },
-    { id: 'sur',      name: 'Energy Plaza Sur',      address: 'Av. Jorge Alessandri 20040, San Bernardo',       suggested: 'midmall'   },
-    { id: 'vespucio', name: 'Energy Plaza Vespucio', address: 'Av. Vicuña Mackenna Ote. 7110, La Florida',      suggested: 'tobalaba'  },
-    { id: 'rancagua', name: 'Energy Rancagua',       address: 'Carretera El Cobre Km. 4 #2521, Machalí',       suggested: 'sanfernando', isSpecial: true },
+    { id: 'norte',    name: 'Energy Club Mallplaza Norte',    address: 'Av. Américo Vespucio 1737, Huechuraba',     closingDate: '31 mayo 2026',      suggested: 'vitacura'  },
+    { id: 'oeste',    name: 'Energy Club Mallplaza Oeste',    address: 'Av. Américo Vespucio 1501, Cerrillos',      closingDate: '31 mayo 2026',      suggested: 'midmall'   },
+    { id: 'alameda',  name: 'Energy Club Mallplaza Alameda',  address: "Av. O'Higgins 3470, Mall Estación Central", closingDate: '30 junio 2026',     suggested: 'morande'   },
+    { id: 'sur',      name: 'Energy Club Mallplaza Sur',      address: 'Av. Jorge Alessandri 20040, San Bernardo',  closingDate: '30 junio 2026',     suggested: 'midmall'   },
+    { id: 'vespucio', name: 'Energy Club Mallplaza Vespucio', address: 'Av. Vicuña Mackenna Ote. 7110, La Florida', closingDate: '30 septiembre 2026', suggested: 'tobalaba'  },
   ],
 
   /* Clubes destino — solo propios, NUNCA franquicias */
@@ -34,10 +33,10 @@ const CONFIG = {
     { id: 'mallmarina',     name: 'Energy Mall Marina',       location: 'Viña del Mar'     },
     { id: 'midmall',        name: 'Energy Midmall Maipú',     location: 'Maipú'            },
     { id: 'morande',        name: 'Energy Morandé',           location: 'Santiago Centro'  },
-    { id: 'nuevalascondes', name: 'Energy Nueva Las Condes',  location: 'Las Condes'       },
+    { id: 'nuevalascondes', name: 'Energy Mallplaza Nueva Las Condes', location: 'Las Condes' },
     { id: 'penalolen',      name: 'Energy Peñalolén',         location: 'Peñalolén'        },
-    { id: 'egana',          name: 'Energy Plaza Egaña',       location: 'La Reina'         },
-    { id: 'tobalaba',       name: 'Energy Plaza Tobalaba',    location: 'La Florida'       },
+    { id: 'egana',          name: 'Energy Mallplaza Egaña',   location: 'La Reina'         },
+    { id: 'tobalaba',       name: 'Energy Mallplaza Tobalaba',location: 'La Florida'       },
     { id: 'sanfernando',    name: 'Energy San Fernando',      location: "O'Higgins"        },
     { id: 'sportclub',      name: 'Energy Sport Club',        location: 'Las Condes'       },
     { id: 'talca',          name: 'Energy Talca',             location: 'Maule'            },
@@ -53,25 +52,25 @@ const CONFIG = {
       badge: 'Más elegida',
       featured: true,
       bullets: [
-        'Cambio sin cargo al club Energy de tu elección',
-        'Pase ALL-CLUB incluido durante la vigencia de tu plan',
+        'Define tu nuevo club permanente sin cargo',
+        'Mantén el acceso ALL-CLUB a toda la red Energy Club de Chile',
         '3, 4 o 6 meses adicionales según antigüedad',
       ],
     },
     {
       id: 'pausa',
-      title: 'Pausa tu plan',
+      title: 'Congela tu plan',
       bullets: [
-        'Suspensión de hasta 6 meses',
+        'Congelamiento de hasta 3 meses',
         'No descuenta saldo del plan',
-        'Reactivación en cualquier club Energy operativo',
+        'Reactivación en cualquier club Energy Club operativo',
       ],
     },
     {
       id: 'traspaso',
-      title: 'Cesión de membresía',
+      title: 'Traspasa tu membresía',
       bullets: [
-        'Cesión del plan a una sola persona, sin cargo',
+        'Traspaso del plan a una sola persona, sin cargo',
         'Trámite simplificado si es familiar directo',
         'Sujeto a condiciones del cesionario',
       ],
@@ -95,19 +94,19 @@ const CONFIG = {
       items: [
         {
           q: 'Mi club no aparece en la lista. ¿Debo preocuparme?',
-          a: 'No. Esta comunicación aplica únicamente a 6 sedes: Alameda, Plaza Norte, Plaza Oeste, Plaza Sur, Plaza Vespucio y Rancagua. Si tu club no está en esa lista, opera con total normalidad y forma parte del grupo de sedes que se fortalecen durante 2026 con nuevo equipamiento, más clases e infraestructura renovada.',
+          a: 'No. Esta comunicación aplica únicamente a 5 sedes: Energy Club Mallplaza Norte, Mallplaza Oeste, Mallplaza Alameda, Mallplaza Sur y Mallplaza Vespucio. Si tu club no está en esa lista, opera con total normalidad y forma parte del grupo de clubes que se fortalecen durante 2026.',
         },
         {
-          q: '¿Por qué Energy está concentrando su red?',
-          a: 'Estamos enfocando nuestros recursos en las sedes con mayor proyección para reforzarlas con el mejor equipamiento y servicio. Es una decisión estratégica para asegurar la sustentabilidad de Energy y entregarte una mejor experiencia en cada visita.',
+          q: '¿Por qué Energy Club está concentrando su red?',
+          a: 'Como parte del proceso de reorganización y estabilización financiera de Energy Club, hemos acordado con Mallplaza la entrega ordenada de cinco clubes ubicados en sus centros comerciales. La medida responde al contexto económico complejo para la operación de esos espacios, y nos permite concentrar nuestros recursos en los clubes que continuarán operando, reforzándolos con mejor equipamiento, más máquinas y una oferta fortalecida de clases grupales.',
         },
         {
-          q: '¿Qué sedes convergen y cuándo?',
-          a: 'Son 6 sedes: Alameda, Plaza Norte, Plaza Oeste, Plaza Sur, Plaza Vespucio y Rancagua. Te avisaremos la fecha de tu sede en cuanto esté confirmada, por correo, WhatsApp y directamente en el club.',
+          q: '¿Qué sedes convergen y cuándo cierran?',
+          a: 'Son 5 sedes con fechas confirmadas: Energy Club Mallplaza Norte (31 mayo 2026), Mallplaza Oeste (31 mayo 2026), Mallplaza Alameda (30 junio 2026), Mallplaza Sur (30 junio 2026) y Mallplaza Vespucio (30 septiembre 2026).',
         },
         {
           q: '¿Las demás sedes están aseguradas?',
-          a: 'Sí. Las sedes que se mantienen son aquellas con mayor sustentabilidad operacional y recibirán equipamiento e infraestructura adicional durante 2026.',
+          a: 'Sí. Los clubes que se mantienen recibirán equipamiento e infraestructura adicional, ampliación de grilla de clases y mayor apoyo de staff durante 2026.',
         },
         {
           q: '¿Las franquicias se ven afectadas?',
@@ -119,12 +118,12 @@ const CONFIG = {
       title: 'Sobre tu membresía',
       items: [
         {
-          q: '¿Qué pasa con mi plan si mi sede converge en otra?',
-          a: 'Tienes 4 opciones disponibles que puedes revisar en la sección "Tus opciones" más arriba. La opción más elegida es el cambio de club con Pase ALL-CLUB incluido y meses adicionales sumados a tu plan según antigüedad (3, 4 o 6 meses).',
+          q: 'Desde hoy, ¿qué acceso tengo como socio de un club en convergencia?',
+          a: 'Desde hoy ya tienes activado el Pase ALL-CLUB, que te permite entrenar de inmediato en toda la red Energy Club de Chile, sin trámites ni costos adicionales. Adicionalmente, puedes revisar tus 4 alternativas a largo plazo en la sección "Tus opciones".',
         },
         {
-          q: '¿Puedo seguir usando mi club actual mientras decido?',
-          a: 'Sí. Tu club operará normalmente hasta la fecha comunicada de convergencia. Tienes hasta 30 días después de esa fecha para definir tu opción.',
+          q: '¿Puedo seguir usando mi club actual hasta su cierre?',
+          a: 'Sí. Tu club operará normalmente hasta la fecha de cierre confirmada (entre 31 de mayo y 30 de septiembre de 2026 según el club). En paralelo, ya puedes usar el Pase ALL-CLUB en cualquier otra sede de la red.',
         },
         {
           q: 'Tengo plan anual o semestral. ¿Pierdo lo que pagué?',
@@ -132,11 +131,11 @@ const CONFIG = {
         },
         {
           q: '¿Cuántos meses adicionales recibo si me cambio de club?',
-          a: '3 meses si llevas menos de 3 años con Energy, 4 meses si llevas entre 3 y 5 años, 6 meses si llevas más de 5 años. Los socios de Rancagua reciben condiciones diferenciadas.',
+          a: '3 meses si llevas menos de 3 años con Energy Club, 4 meses si llevas entre 3 y 5 años, 6 meses si llevas más de 5 años.',
         },
         {
           q: '¿Puedo traspasarle mi plan a otra persona?',
-          a: 'Sí, sin cargo. El plan puede traspasarse a una sola persona. La cesión a familiar directo tiene un trámite simplificado; para terceros, se requieren los datos del cesionario. El cesionario debe cumplir 4 requisitos: ser mayor de 16 años, no tener un plan Energy activo, no tener deuda vigente con Energy, y no haber tenido beca activa en los últimos 6 meses.',
+          a: 'Sí, sin cargo. El plan puede traspasarse a una sola persona. El traspaso a familiar directo tiene un trámite simplificado; para terceros, se requieren los datos del cesionario. El cesionario debe cumplir 4 requisitos: ser mayor de 16 años, no tener un plan Energy Club activo, no tener deuda vigente con Energy Club, y no haber tenido beca activa en los últimos 6 meses.',
         },
         {
           q: 'Tengo plan Banco Estado o corporativo. ¿Cómo aplica?',
@@ -148,8 +147,8 @@ const CONFIG = {
       title: 'Sobre tu Personal Trainer y clases',
       items: [
         {
-          q: 'Mi PT me atiende en una sede que converge. ¿Qué pasa con él?',
-          a: 'Estamos trabajando para que la mayoría de los PT migren con los socios a la sede que se fortalece. En el formulario puedes indicar si quieres mantener a tu PT actual. Si por alguna razón no es posible, te asignamos uno nuevo y te ofrecemos sesiones de cortesía para la transición.',
+          q: 'Mi PT me atiende en uno de los clubes que dejará de operar. ¿Qué pasa con él?',
+          a: 'Estamos trabajando para que la mayoría de los PT migren con los socios al club que los reciba. En el formulario puedes indicar si quieres mantener a tu PT actual. Si por alguna razón no es posible, te asignamos uno nuevo y te ofrecemos sesiones de cortesía para la transición.',
         },
         {
           q: '¿Las clases grupales se mantienen?',
@@ -162,15 +161,11 @@ const CONFIG = {
       items: [
         {
           q: '¿Qué pasa con mi locker o casillero?',
-          a: 'Tendrás 15 días después de la convergencia para retirar tus pertenencias. Te enviaremos un recordatorio por correo. Si tienes locker arrendado, el cobro se suspende automáticamente desde la fecha de convergencia.',
+          a: 'Tendrás 15 días después del cierre de tu club para retirar tus pertenencias. Te enviaremos un recordatorio por correo. Si tienes locker arrendado, el cobro se suspende automáticamente desde la fecha de cierre.',
         },
         {
           q: 'Tengo cobro automático. ¿Lo detienen?',
-          a: 'Si eliges pausa o traspaso, el cobro automático se suspende. Si te cambias de club, continúa normal en tu nuevo club. Cualquier cambio se confirma por email.',
-        },
-        {
-          q: 'Soy de Rancagua y no tengo otro Energy cerca. ¿Qué opciones tengo?',
-          a: 'Para los socios de Rancagua hemos preparado un plan especial con condiciones diferenciadas; al completar el formulario verás un banner específico con el detalle. Adicionalmente, estamos en conversaciones con el operador que tomará el espacio físico para explorar posibles condiciones de continuidad en el nuevo gimnasio. Estas negociaciones son independientes y su resultado depende de dicho operador; no forman parte de los beneficios que Energy te ofrece directamente. Los socios de Rancagua que completen el formulario quedarán incluidos en la comunicación especial de la sección "Novedades en curso" en caso de concretarse acuerdos. Si tu caso es particular, déjanos un mensaje en el formulario y un asesor te contactará.',
+          a: 'Si eliges congelar tu plan o traspasarlo, el cobro automático se suspende. Si te cambias de club, continúa normal en tu nuevo club. Cualquier cambio se confirma por email.',
         },
         {
           q: 'Mi caso es muy especial y ninguna opción se ajusta. ¿Qué hago?',
@@ -776,7 +771,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-step2-back')?.addEventListener('click', () => { state.currentStep = 1; showStep(1); });
   document.getElementById('btn-step2-next')?.addEventListener('click', () => {
     if (validateStep2()) { state.currentStep = 3; renderRadioCards();
-      document.getElementById('rancagua-banner')?.classList.toggle('visible', state.data.clubActual === 'rancagua');
       showStep(3); saveToStorage();
     }
   });
