@@ -306,12 +306,12 @@ function renderProgressBar() {
   if (pb) pb.setAttribute('aria-valuenow', state.currentStep);
 }
 
-function showStep(stepNumber) {
+function showStep(stepNumber, scroll = true) {
   document.querySelectorAll('.wizard__step').forEach(el => el.classList.remove('visible'));
   const target = document.getElementById(`wizard-step-${stepNumber}`);
   if (target) target.classList.add('visible');
   renderProgressBar();
-  document.querySelector('.wizard')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (scroll) document.querySelector('.wizard')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function populateClosingClubs() {
@@ -786,7 +786,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* Arrancar desde el paso correcto */
-  if (!hasStorage) showStep(1);
+  if (!hasStorage) showStep(1, false);
 });
 
 /* Repoblar campos al reanudar desde localStorage */
